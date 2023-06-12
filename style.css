@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white ;
+    
+    font-family: 'Oswald', sans-serif;
+} 
+/* #header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/bg.webp);
+    background-size: cover;
+    background-position: center;
+} */
+.container{
+    padding: 10px 10%;
+    background-color: bisque;
+    height: 14vh;
+}
+#logo{
+    width: 8%;
+    height: 10vh;
+    border-radius: 50%;
+    
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* navigation bar bottom line formation code */
+nav ul li a{
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* nav ul li a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+} */
+
+.header-text{
+    margin-top:3%;
+    margin-left: 5%;
+  height: 69vh;
+    width: 90%;
+   
+    /* background-image: url(Images/bg.webp);
+    background-size: cover;
+    background-position: center; */
+}
+.header-text h1{
+    font-size: 15px;
+   text-align: center;
+}
+#name{
+    font-size: 25px;
+    color: greenyellow;
+    
+}
+#name2{
+    font-size: 15px;
+    color: greenyellow;
+    
+}
+#buttons{
+    padding: 8px 12px;
+    border-radius: 15px ;
+    background-color: rgb(124, 218, 113);
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+} 
+footer{
+    background-color: #73f5ea;
+    height: 10vh;
+}
+footer ul li a img{
+    width: 100%;
+    height: 8vh;
+   padding-top: 5px;
+}
+ ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  
+}
+footer ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+}
+
+/* contact page css */
+#contact-header{
+  position: absolute;
+  top: 20%;
+left: 45%;
+color: greenyellow;
+  font-size: 35px;
+}
+section h5 span {
+   color: greenyellow;
+   
+}
+section h5{
+    width: 100%;
+    padding: 10px 15px;
+}
+.main{
+    display: flex;
+}
+#form-cot{
+   height: 40vh; 
+   margin-left: 250px;
+}
+#form-cot label{
+    width: 30px;
+}
+input{
+    width:90%;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+textarea{
+    width: 90%;
+}
+
+/* this is aboutpage css */
+.mainhead{
+    width: 500px;
+    margin: auto;
+    text-align: justify;
+}
+.mainhead h1{
+    color: #828210;
+    font-size: 20px;
+    
+}
+.mainhead p{
+    margin-top: 15px;
+}
+
+.pro ul li{
+    width: 100%;
+    list-style: none;
+   padding: 0 10px;
+    
+}
+
+
