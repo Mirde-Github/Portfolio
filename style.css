@@ -123,10 +123,14 @@ footer ul li{
 /* contact page css */
 #contact-header{
   position: absolute;
-  top: 20%;
+  top: 15%;
 left: 45%;
 color: greenyellow;
-  font-size: 35px;
+  font-size: 25px;
+ 
+}
+#contact-header section{
+    padding-top: 300px;
 }
 section h5 span {
    color: greenyellow;
@@ -138,6 +142,7 @@ section h5{
 }
 .main{
     display: flex;
+    padding: 25px;
 }
 #form-cot{
    height: 40vh; 

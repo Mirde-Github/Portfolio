@@ -9,8 +9,16 @@
    
 
     <title>Mirde portfolio Website</title>
-    
- 
+    <script src="contact.js"></script> 
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("psPyCGiK0hp5RZ-dp");  //provide your public key here
+})();
+</script>
 </head>
 
 <body>
@@ -42,25 +50,25 @@
               </section> 
             <section id="form-cot">
                 
-                    <label for="exampleFormControlInput2" class="form-label">Name</label>
+                    <label for="name1" class="form-label">Name</label>
                     <div>
-                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Enter name">
+                        <input type="text" class="form-control" id="name1" placeholder="Enter name" required="" />
                     </div>
                     
                  
                
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required="" />
                  <br>
                 
-                    <label for="exampleFormControlInput3" class="form-label">Mobile No</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Mobile number ">
+                    <label for="number" class="form-label">Mobile No</label>
+                    <input type="text" class="form-control" id="number" placeholder="Mobile number " required="" />
                 <br>
-                    <label for="exampleFormControlTextarea1" class="form-label">Write Message</label>
+                    <label for="message" class="form-label">Write Message</label>
                     <br>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Write text here"></textarea>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Write text here"></textarea>
                     <br>
-                    <button style="margin-left: 35%; padding:6px 15px; border-radius: 5px; background-color: #fff; margin-top: 10px;" type="submit">Submit</button>
+                    <button style="margin-left: 35%; padding:6px 15px; border-radius: 5px; background-color: #fff; margin-top: 10px;" type="submit" onclick="Sendmails()">Submit</button>
                  
             </section>
         </div>
