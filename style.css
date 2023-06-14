@@ -120,6 +120,7 @@ nav ul li a:hover::after {
 
 }
 
+
 footer {
     background-color: #73f5ea;
     height: 10vh;
@@ -225,3 +226,10 @@ textarea {
     padding: 0px 10px;
 
 }
+
+@media screen and (min-width: 300px) {
+   element.para{
+    font-size: 25px;
+    color: red;
+   }
+  }
