@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: white ;
-    
+
+body {
+    background: white;
+
     font-family: 'Oswald', sans-serif;
-} 
+}
+
 /* #header{
     width: 100%;
     height: 100vh;
@@ -17,37 +19,44 @@ body{
     background-size: cover;
     background-position: center;
 } */
-.container{
+.container {
     padding: 10px 10%;
     background-color: bisque;
     height: 14vh;
 }
-#logo{
-    width: 8%;
+
+#logo {
+    width: 6vw;
     height: 10vh;
     border-radius: 50%;
-    
+
 
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    font-size: 1.6rem;
+    text-decoration: none;
+
 }
 
 /* navigation bar bottom line formation code */
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     position: relative;
+    color: #be4bdb;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 2px;
@@ -57,7 +66,8 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -66,120 +76,152 @@ nav ul li a:hover::after{
     border-bottom: 2px solid red;
 } */
 
-.header-text{
-    margin-top:3%;
+.header-text {
+    margin-top: 3%;
     margin-left: 5%;
-  height: 69vh;
+    height: 69vh;
     width: 90%;
-   
+
+
     /* background-image: url(Images/bg.webp);
     background-size: cover;
     background-position: center; */
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 15px;
-   text-align: center;
+    text-align: center;
+    font-size: 1rem;
 }
-#name{
-    font-size: 25px;
+
+.header-text h6 {
+    font-size: 2rem;
+}
+
+#name {
+    font-size: 2rem;
     color: greenyellow;
-    
+
 }
-#name2{
-    font-size: 15px;
+
+#name2 {
+    font-size: 1.8rem;
     color: greenyellow;
-    
+
 }
-#buttons{
-    padding: 8px 12px;
-    border-radius: 15px ;
+
+#buttons {
+    padding: 10px 20px;
+    border-radius: 15px;
     background-color: rgb(124, 218, 113);
-    font-size: 10px;
+    font-size: 17px;
     font-weight: bold;
-    margin-top: 10px;
-} 
-footer{
+    margin-top: 20px;
+
+}
+
+footer {
     background-color: #73f5ea;
     height: 10vh;
 }
-footer ul li a img{
+
+footer ul li a img {
     width: 100%;
     height: 8vh;
-   padding-top: 5px;
+    padding-top: 8px;
+    border-radius: 2rem;
 }
- ul{
+
+ul {
     display: flex;
     align-items: center;
     justify-content: center;
-   
-  
+
+
 }
-footer ul li{
+
+footer ul li {
     display: inline-block;
     list-style: none;
     margin-left: 50px;
 }
 
 /* contact page css */
-#contact-header{
-  position: absolute;
-  top: 15%;
-left: 45%;
-color: greenyellow;
-  font-size: 25px;
- 
-}
-#contact-header section{
-    padding-top: 300px;
-}
-section h5 span {
-   color: greenyellow;
-   
-}
-section h5{
-    width: 100%;
-    padding: 10px 15px;
-}
-.main{
-    display: flex;
-    padding: 25px;
-}
-#form-cot{
-   height: 40vh; 
-   margin-left: 250px;
-}
-#form-cot label{
-    width: 30px;
-}
-input{
-    width:90%;
-    padding: 5px 8px;
-    border-radius: 8px;
-}
-textarea{
-    width: 90%;
+#contact-header {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    color: greenyellow;
+    font-size: 2.5rem;
+margin-bottom: 40px;
 }
 
+#contact-header section {
+    padding-top: 300px;
+    margin-left: 50%;
+}
+
+section h5 span {
+    color: greenyellow;
+
+}
+
+section h5 {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 1.5rem;
+}
+
+.main {
+    display: flex;
+    padding: 25px;
+    margin-left:20%;
+}
+
+#form-cot {
+    height: 40vh;
+    margin-left: 15%;
+}
+
+#form-cot label {
+    width: 30px;
+    font-size: 1.4rem;
+}
+
+input {
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 100%;
+}
+
+
 /* this is aboutpage css */
-.mainhead{
+.mainhead {
     width: 500px;
     margin: auto;
     text-align: justify;
 }
-.mainhead h1{
+
+.mainhead h1 {
     color: #828210;
-    font-size: 20px;
-    
-}
-.mainhead p{
-    margin-top: 15px;
+    font-size: 2rem;
+
 }
 
-.pro ul li{
+.mainhead p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* this is project css */
+
+.pro p {
     width: 100%;
-    list-style: none;
-   padding: 0 10px;
-    
+    font-size: 1.4rem;
+    padding: 0px 10px;
+
 }
-
-
